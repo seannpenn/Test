@@ -7,24 +7,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portal</title>
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
-    <div class="mainContent">
-        <div class="login">
-            <h1>Log in</h1>
-            <div class="inputs">
+    <form method="POST">
+        <div class="mainContent">
+            <div class="login">
+                <h1>Log in</h1>
+                <div class="inputs">
 
-                <input type="email" name="EMAIL" placeholder="Email">
+                    <input type="text" id="text" name="EMAIL" placeholder="Enter Email">
+                    <input type="password" id="password" name="PASSWORD" placeholder="Password">
 
-                <input type="password" name="PASSWORD" placeholder="Password">
+                </div>
+                <input type="button" name="" value="Login" onclick="validate()">
+                <p>Forgort username/password?</p>
             </div>
-            <button onClick="alertMe('Hurry Up!!')">LOGIN</button>
-            <p>Forgort username/password?</p>
         </div>
-    </div>
-
+    </form>
     <script src="behavior.js"></script>
+
 </body>
 
 </html>
